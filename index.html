@@ -1,104 +1,237 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio Calebe</title>
-    <link rel="stylesheet" href="styles/style.css">
-</head>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <nav class="header__nav">
-            <a href="#sobre" class="header__link">Sobre Mim</a>
-            <a href="#habilidades" class="header__link">Habilidades</a>
-            <a href="#projetos" class="header__link">Projetos</a>
-            <a href="#contato" class="header__link">Contato</a>
-        </nav>
+      <nav class="header__nav">
+        <a href="#sobre" class="header__link">Sobre Mim</a>
+        <a href="#habilidades" class="header__link">Habilidades</a>
+        <a href="#projetos" class="header__link">Projetos</a>
+        <a href="#contato" class="header__link">Contato</a>
+      </nav>
     </header>
     <section class="profile">
-        <div class="profile__image">
-            <img src="https://via.placeholder.com/200" alt="Foto de perfil">
-        </div>
+      <div class="profile__image">
+        <img src="https://via.placeholder.com/200" alt="Foto de perfil" />
+      </div>
 
-        <div class="profile__content">
-            <h2 class="profile__name">
-                Calebe Stodulski
-            </h2>
+      <div class="profile__content">
+        <h2 class="profile__name">Calebe Stodulski</h2>
 
-            <h4 class="profile__title">
-                Desenvolvedor Front-End
-            </h4>
-        </div>
+        <h4 class="profile__title">Desenvolvedor Front-End</h4>
+      </div>
     </section>
-<section id="sobre" class="about">
-    <div class="about__container">
+    <section id="sobre" class="about">
+      <div class="about__container">
         <div class="about__header">
-            <h2 class="about__title">Sobre Mim</h2>
+          <h2 class="about__title">Sobre Mim</h2>
         </div>
 
         <div class="about__content">
-            <div class="about__presentation">
-                <p>
-                    Sou estudante de Engenharia de Software e desenvolvedor
-                    Fullstack com experiência no ecossistema .NET. Tenho
-                    interesse em transformar regras de negócio e necessidades
-                    dos usuários em aplicações funcionais, organizadas e
-                    intuitivas.
-                </p>
+          <div class="about__presentation">
+            <p>
+              Sou estudante de Engenharia de Software e desenvolvedor Fullstack
+              com experiência no ecossistema .NET. Tenho interesse em
+              transformar regras de negócio e necessidades dos usuários em
+              aplicações funcionais, organizadas e intuitivas.
+            </p>
 
-                <p>
-                    Ao longo da minha experiência profissional, venho trabalhando
-                    com C#, .NET, APIs RESTful, Entity Framework, React, Blazor,
-                    HTML, CSS e JavaScript/TypeScript, buscando sempre aplicar
-                    boas práticas de desenvolvimento, Clean Code e princípios
-                    SOLID.
-                </p>
+            <p>
+              Ao longo da minha experiência profissional, venho trabalhando com
+              C#, .NET, APIs RESTful, Entity Framework, React, Blazor, HTML, CSS
+              e JavaScript/TypeScript, buscando sempre aplicar boas práticas de
+              desenvolvimento, Clean Code e princípios SOLID.
+            </p>
 
-                <p>
-                    Atualmente, meu principal interesse profissional está no
-                    desenvolvimento Front-end, especialmente na criação de
-                    interfaces modernas, responsivas e com boa experiência de
-                    usuário. Busco aprofundar meus conhecimentos em tecnologias
-                    e práticas que permitam construir aplicações cada vez mais
-                    eficientes e agradáveis de utilizar.
-                </p>
+            <p>
+              Atualmente, meu principal interesse profissional está no
+              desenvolvimento Front-end, especialmente na criação de interfaces
+              modernas, responsivas e com boa experiência de usuário. Busco
+              aprofundar meus conhecimentos em tecnologias e práticas que
+              permitam construir aplicações cada vez mais eficientes e
+              agradáveis de utilizar.
+            </p>
+          </div>
+
+          <div class="about__info">
+            <div class="about__info-item">
+              <span class="about__info-label">Formação</span>
+              <span class="about__info-value"> Engenharia de Software </span>
             </div>
 
-            <div class="about__info">
-                <div class="about__info-item">
-                    <span class="about__info-label">Formação</span>
-                    <span class="about__info-value">
-                        Engenharia de Software
-                    </span>
-                </div>
-
-                <div class="about__info-item">
-                    <span class="about__info-label">Instituição</span>
-                    <span class="about__info-value">
-                        Descomplica
-                    </span>
-                </div>
-
-                <div class="about__info-item">
-                    <span class="about__info-label">Previsão de conclusão</span>
-                    <span class="about__info-value">
-                        2027
-                    </span>
-                </div>
-
-                <div class="about__info-item">
-                    <span class="about__info-label">Área de interesse</span>
-                    <span class="about__info-value">
-                        Desenvolvimento Front-end
-                    </span>
-                </div>
+            <div class="about__info-item">
+              <span class="about__info-label">Instituição</span>
+              <span class="about__info-value"> Descomplica </span>
             </div>
+
+            <div class="about__info-item">
+              <span class="about__info-label">Previsão de conclusão</span>
+              <span class="about__info-value"> 2027 </span>
+            </div>
+
+            <div class="about__info-item">
+              <span class="about__info-label">Área de interesse</span>
+              <span class="about__info-value"> Desenvolvimento Front-end </span>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
+    <section id="habilidades" class="skills">
+      <div class="skills__container">
+        <div class="skills__header">
+          <h2 class="skills__title">Habilidades</h2>
+        </div>
+        <div class="skills__groups">
+          <div class="skills__group">
+            <h3 class="skills__group-title">Habilidades Técnicas</h3>
+            <div class="skills__cards">
+              <article class="skill-card">
+                <div class="skill-card__icon">01</div>
+                <h4 class="skill-card__title">Front-end</h4>
+                <p class="skill-card__description">
+                  Desenvolvimento de interfaces responsivas utilizando HTML,
+                  CSS, JavaScript, TypeScript e React.
+                </p>
+              </article>
+              <article class="skill-card">
+                <div class="skill-card__icon">02</div>
+                <h4 class="skill-card__title">.NET & C#</h4>
+                <p class="skill-card__description">
+                  Desenvolvimento de aplicações e APIs RESTful utilizando C#,
+                  .NET, Entity Framework e boas práticas de programação.
+                </p>
+              </article>
+              <article class="skill-card">
+                <div class="skill-card__icon">03</div>
+                <h4 class="skill-card__title">Boas práticas</h4>
+                <p class="skill-card__description">
+                  Conhecimento em Clean Code, SOLID, TDD e organização de código
+                  visando aplicações mais manuteníveis.
+                </p>
+              </article>
+            </div>
+          </div>
+          <div class="skills__group">
+            <h3 class="skills__group-title">Habilidades Pessoais</h3>
+            <div class="skills__cards">
+              <article class="skill-card">
+                <div class="skill-card__icon">01</div>
+                <h4 class="skill-card__title">Aprendizado contínuo</h4>
+                <p class="skill-card__description">
+                  Interesse constante em aprender novas tecnologias, conceitos e
+                  práticas de desenvolvimento.
+                </p>
+              </article>
+              <article class="skill-card">
+                <div class="skill-card__icon">02</div>
+                <h4 class="skill-card__title">Trabalho em equipe</h4>
+                <p class="skill-card__description">
+                  Colaboração com diferentes profissionais para encontrar
+                  soluções alinhadas às necessidades do projeto.
+                </p>
+              </article>
+              <article class="skill-card">
+                <div class="skill-card__icon">03</div>
+                <h4 class="skill-card__title">Visão de negócio</h4>
+                <p class="skill-card__description">
+                  Capacidade de compreender regras de negócio e necessidades dos
+                  usuários para transformar requisitos em soluções.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projetos" class="projects">
+      <div class="projects__container">
+        <div class="projects__header">
+          <h2 class="projects__title">Projetos</h2>
+        </div>
+        <div class="projects__cards">
+          <article class="project-card">
+            <div class="project-card__image"><span>BD</span></div>
+            <div class="project-card__content">
+              <span class="project-card__number">01</span>
+              <h3 class="project-card__title">Bolos Doces</h3>
+              <p class="project-card__description">
+                Página de apresentação de uma doceria, desenvolvida utilizando
+                HTML e CSS, com foco na apresentação dos produtos e identidade
+                visual da loja.
+              </p>
+              <div class="project-card__technologies">
+                <span>HTML</span> <span>CSS</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-card__image"><span>RW</span></div>
+            <div class="project-card__content">
+              <span class="project-card__number">02</span>
+              <h3 class="project-card__title">Rock Wear</h3>
+              <p class="project-card__description">
+                Página de venda de camisetas online, apresentando a loja e seus
+                produtos, com funcionalidade para realizar a compra de
+                camisetas.
+              </p>
+              <div class="project-card__technologies">
+                <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="contato" class="contact">
+      <div class="contact__container">
+        <div class="contact__header">
+          <h2 class="contact__title">Contato</h2>
+        </div>
 
-</body>
+        <div class="contact__content">
+          <div class="contact__intro">
+            <h3 class="contact__subtitle">Vamos conversar?</h3>
 
+            <p class="contact__description">
+              Entre em contato comigo através dos canais abaixo. Estou aberto a
+              oportunidades, projetos e novas conexões profissionais.
+            </p>
+          </div>
+
+          <div class="contact__links">
+            <a href="mailto:calebestodulski@gmail.com" class="contact-card">
+              <span class="contact-card__label">E-mail</span>
+              <span class="contact-card__value">
+                calebestodulski@gmail.com
+              </span>
+            </a>
+
+            <div class="contact-card">
+              <span class="contact-card__label">Telefone</span>
+              <span class="contact-card__value">
+                81 99646-3850
+              </span>
+            </div>
+
+            <a
+              href="https://github.com/Stolds"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-card"
+            >
+              <span class="contact-card__label">GitHub</span>
+              <span class="contact-card__value"> github.com/cStodulski1 </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

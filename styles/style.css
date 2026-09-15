@@ -1,3 +1,7 @@
+* {
+    scroll-behavior: smooth;
+}
+
 .header {
     position: sticky;
     top: 0;
@@ -267,5 +271,363 @@
     }
 }
 
+.skills {
+    padding: 100px 20px;
+    background-color: #ffffff;
+    scroll-margin-top: 70px;
+}
 
+.skills__container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skills__header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.skills__title {
+    margin: 0;
+    color: #111827;
+    font-family: Arial, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.skills__groups {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.skills__group-title {
+    margin: 0 0 25px;
+    color: #1e293b;
+    font-family: Arial, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.skills__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    padding: 30px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: #bfdbfe;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.skill-card__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    background-color: #2563eb;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.skill-card__title {
+    margin: 0 0 12px;
+    color: #1e293b;
+    font-family: Arial, sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.skill-card__description {
+    margin: 0;
+    color: #64748b;
+    font-family: Arial, sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+@media (max-width: 800px) {
+    .skills {
+        padding: 70px 20px;
+    }
+
+    .skills__cards {
+        grid-template-columns: 1fr;
+    }
+
+    .skills__groups {
+        gap: 45px;
+    }
+}
+
+.projects {
+    padding: 100px 20px;
+    background-color: #f8fafc;
+    scroll-margin-top: 70px;
+}
+
+.projects__container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.projects__header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.projects__title {
+    margin: 0;
+
+    color: #111827;
+
+    font-family: Arial, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.projects__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.project-card {
+    overflow: hidden;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.project-card__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 180px;
+
+    background-color: #1e293b;
+}
+
+.project-card__image span {
+    color: #ffffff;
+
+    font-family: Arial, sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.project-card__content {
+    padding: 30px;
+}
+
+.project-card__number {
+    color: #2563eb;
+
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.project-card__title {
+    margin: 8px 0 15px;
+
+    color: #111827;
+
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.project-card__description {
+    margin: 0 0 25px;
+
+    color: #64748b;
+
+    font-family: Arial, sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.project-card__technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.project-card__technologies span {
+    padding: 6px 12px;
+
+    color: #2563eb;
+    background-color: #eff6ff;
+
+    border-radius: 20px;
+
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+@media (max-width: 700px) {
+    .projects {
+        padding: 70px 20px;
+    }
+
+    .projects__cards {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card__image {
+        height: 150px;
+    }
+
+    .project-card__content {
+        padding: 25px;
+    }
+}
+
+.contact {
+    padding: 100px 20px;
+    background-color: #ffffff;
+    scroll-margin-top: 70px;
+}
+
+.contact__container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact__header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.contact__title {
+    margin: 0;
+    color: #111827;
+    font-family: Arial, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.contact__content {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 70px;
+    align-items: start;
+}
+
+.contact__subtitle {
+    margin: 0 0 15px;
+    color: #1e293b;
+    font-family: Arial, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.contact__description {
+    margin: 0;
+    color: #64748b;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.contact__links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 20px 25px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-left: 3px solid #2563eb;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.contact-card:hover {
+    transform: translateX(5px);
+    border-color: #bfdbfe;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.contact-card__label {
+    color: #64748b;
+    font-family: Arial, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.contact-card__value {
+    color: #1e293b;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+@media (max-width: 700px) {
+    .contact {
+        padding: 70px 20px;
+    }
+
+    .contact__header {
+        margin-bottom: 35px;
+    }
+
+    .contact__title {
+        font-size: 1.9rem;
+    }
+
+    .contact__content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .contact__subtitle {
+        font-size: 1.4rem;
+    }
 }
