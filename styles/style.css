@@ -1,0 +1,204 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    width: 100%;
+
+    background-color: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 18px 20px;
+}
+
+.header__link {
+    color: #1e293b;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.header__link:hover {
+    color: #2563eb;
+}
+
+@media (max-width: 600px) {
+    .header__nav {
+        gap: 20px;
+        padding: 15px 10px;
+    }
+
+    .header__link {
+        font-size: 0.85rem;
+    }
+}
+
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 45px 55px;
+
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.profile__image {
+    flex-shrink: 0;
+}
+
+.profile__image img {
+    width: 180px;
+    height: 180px;
+
+    display: block;
+
+    object-fit: cover;
+    border-radius: 50%;
+
+    border: 5px solid #ffffff;
+    outline: 3px solid #2563eb;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.profile__content {
+    flex: 1;
+    min-width: 0;
+}
+
+.profile__name {
+    margin: 0;
+
+    color: #111827;
+
+    font-family: Arial, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.profile__divider {
+    width: 90px;
+    height: 4px;
+
+    margin: 15px 0 18px;
+
+    background: #2563eb;
+    border-radius: 10px;
+}
+
+.profile__title {
+    margin: 0;
+
+    color: #64748b;
+
+    font-family: Arial, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+
+    text-align: right;
+}
+
+@media (max-width: 700px) {
+    .profile {
+        flex-direction: column;
+        gap: 25px;
+
+        margin: 25px 15px;
+        padding: 35px 25px;
+
+        text-align: center;
+    }
+
+    .profile__image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile__name {
+        font-size: 2rem;
+    }
+
+    .profile__divider {
+        margin: 15px auto;
+    }
+
+    .profile__title {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    .header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    width: 100%;
+
+    background-color: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 18px 20px;
+}
+
+.header__link {
+    color: #1e293b;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.header__link:hover {
+    color: #2563eb;
+}
+
+@media (max-width: 600px) {
+    .header__nav {
+        gap: 20px;
+        padding: 15px 10px;
+    }
+
+    .header__link {
+        font-size: 0.85rem;
+    }
+}
+}
