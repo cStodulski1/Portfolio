@@ -151,54 +151,121 @@
         font-size: 1.1rem;
         text-align: center;
     }
-    .header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-
-    width: 100%;
-
-    background-color: #ffffff;
-    border-top: 1px solid #e5e7eb;
-    border-bottom: 1px solid #e5e7eb;
-
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-.header__nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 45px;
+.about {
+    padding: 100px 20px;
+    background-color: #f8fafc;
+    scroll-margin-top: 70px;
+}
 
+.about__container {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 18px 20px;
 }
 
-.header__link {
+.about__header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.about__title {
+    margin: 0;
+    color: #111827;
+    font-family: Arial, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.about__content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 70px;
+    align-items: start;
+}
+
+.about__presentation p {
+    margin: 0 0 20px;
+    color: #475569;
+    font-family: Arial, sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.about__presentation p:last-child {
+    margin-bottom: 0;
+}
+
+.about__info {
+    display: flex;
+    flex-direction: column;
+
+    border-left: 3px solid #2563eb;
+    padding-left: 25px;
+}
+
+.about__info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    padding: 18px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.about__info-item:first-child {
+    padding-top: 0;
+}
+
+.about__info-item:last-child {
+    border-bottom: none;
+}
+
+.about__info-label {
+    color: #64748b;
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.about__info-value {
     color: #1e293b;
     font-family: Arial, sans-serif;
     font-size: 1rem;
     font-weight: 600;
-
-    text-decoration: none;
-
-    transition: color 0.2s ease;
 }
 
-.header__link:hover {
-    color: #2563eb;
-}
-
-@media (max-width: 600px) {
-    .header__nav {
-        gap: 20px;
-        padding: 15px 10px;
+@media (max-width: 700px) {
+    .about {
+        padding: 70px 20px;
     }
 
-    .header__link {
-        font-size: 0.85rem;
+    .about__header {
+        margin-bottom: 35px;
+    }
+
+    .about__title {
+        font-size: 1.9rem;
+    }
+
+    .about__content {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .about__presentation p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .about__info {
+        padding-left: 20px;
     }
 }
+
+
 }
